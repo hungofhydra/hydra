@@ -93,11 +93,6 @@ export function CloudSyncContextProvider({
   );
 
   const getGameArtifacts = useCallback(async () => {
-    if (shop === "custom") {
-      setArtifacts([]);
-      return;
-    }
-
     const params = new URLSearchParams({
       objectId,
       shop,

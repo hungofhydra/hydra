@@ -511,10 +511,6 @@ export function GameCloudSettingsTab({
     ]
   );
 
-  if (game.shop === "custom") {
-    return <p>{t("settings_not_available_for_custom_games")}</p>;
-  }
-
   return (
     <VerticalFocusGroup className="game-cloud-settings-tab">
       {isEmulationGame ? (
